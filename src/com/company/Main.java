@@ -4,7 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        String str = null;
-        System.out.println(str.length());
+        try {
+            String str = null;
+            System.out.println(str.length());
+        }catch (NullPointerException e) {
+            System.out.println("例外が発生しました");
+            System.out.println(e.getMessage());
+        }
+
     }
 }
